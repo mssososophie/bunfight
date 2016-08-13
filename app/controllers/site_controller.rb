@@ -18,7 +18,9 @@ class SiteController < ApplicationController
 			city_list = {
 				"Aberdeen" => "Piece",
 				"Armagh" => "Roll",
-				"Manchester" => "Bap" 
+				"Manchester" => "Barm"
+				"Liverpool" => "Barmcake"
+				# "Barrow-In-Furness" =>  
 			}
 
 			@city_name = c.city_name
