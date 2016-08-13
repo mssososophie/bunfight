@@ -5,5 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-BreadName.create(city_name: "Manchester", bread_name: "Barm")
+BreadName.transaction do 
+	BreadName.delete_all
+	BreadName.create(city_name: "Manchester", bread_name: "Barm")
+	BreadName.create(city_name: "Liverpool", bread_name: "Barmcake")
+end
