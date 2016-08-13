@@ -15,17 +15,11 @@ class SiteController < ApplicationController
 			render plain: "No bread for you, chump!"
 		else
 
-			city_list = {
-				"Aberdeen" => "Piece",
-				"Armagh" => "Roll",
-				"Manchester" => "Barm",
-				"Liverpool" => "Barmcake"
-				# "Barrow-In-Furness" =>  
-			}
+			bn = BreadName.find_by(city_name: c.city_name)
 
 			@city_name = c.city_name
 
-			@bread = city_list[c.city_name]
+			@bread = bn.bread_name
 		end
 	end
 
