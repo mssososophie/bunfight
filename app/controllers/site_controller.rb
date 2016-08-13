@@ -18,7 +18,7 @@ class SiteController < ApplicationController
 			city_list = {
 				"Aberdeen" => "Piece",
 				"Armagh" => "Roll",
-				"Manchester" => "Barm"
+				"Manchester" => "Barm",
 				"Liverpool" => "Barmcake"
 				# "Barrow-In-Furness" =>  
 			}
