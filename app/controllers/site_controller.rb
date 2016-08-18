@@ -12,7 +12,8 @@ class SiteController < ApplicationController
 		# puts c.inspect
 
 		if c.nil? 
-			render plain: "No bread for you, chump!"
+			#render plain: "No bread for you, chump!"
+			not_found
 		else
 
 			bn = BreadName.find_by(city_name: c.city_name)
