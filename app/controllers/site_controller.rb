@@ -9,7 +9,7 @@ class SiteController < ApplicationController
 		end
 
 		c = GeoIP.new('GeoLiteCity.dat').city(remote_ip)
-		# puts c.inspect
+		logger.debug c.inspect
 
 		if c.nil? 
 			#render plain: "No bread for you, chump!"
