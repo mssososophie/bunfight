@@ -18,15 +18,19 @@ class SiteController < ApplicationController
 			return
 		end
 
-		bn = BreadName.find_by(city_name: c.city_name)
+		debug_city = "Bristol"
+
+		# bn = BreadName.find_by(city_name: c.city_name)
+		bn = BreadName.find_by(city_name: debug_city)
 
 		if bn.nil?
 			not_found
 			return
 		end
 
-		@city_name = c.city_name
-
+		# unhighlight this to brute force it
+		# @city_name = c.city_name
+		@city_name = debug_city
 		@bread = bn.bread_name
 	end
 

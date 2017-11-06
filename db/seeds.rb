@@ -31,5 +31,5 @@ BreadName.transaction do
 	BreadName.create(city_name: "London", bread_name: "Bun")
 	BreadName.create(city_name: "Glasgow", bread_name: "Piece")
 	BreadName.create(city_name: "Warrington", bread_name: "Bun")
-
+	BreadName.create(city_name: "Bristol", bread_name: "Roll")
 end
