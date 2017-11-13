@@ -10,24 +10,18 @@ class SiteController < ApplicationController
 			remote_ip = "164.39.71.226"
 		end
 
-		c = GeoIP.new('GeoLiteCity.dat').city(remote_ip)
-		logger.debug c.inspect
+		geoip_city = GeoIP.new('GeoLiteCity.dat').city(remote_ip)
 
-		if c.nil? 
-			#render plain: "No bread for you, chump!"
-			# not_found
-			# return
-			c = 'Bristol' # Default to bristol if city not found
-		end
+		city_name = geoip_city ? geoip_city.city_name : 'Bristol'
 
-		bn = BreadName.find_by(city_name: c.city_name)
+		bn = BreadName.find_by(city_name: city_name)
 
 		if bn.nil?
 			not_found
 			return
 		end
 
-		@city_name = c.city_name
+		@city_name = city_name
 		@bread = bn.bread_name
 	end
 end
