@@ -10,10 +10,10 @@ class SiteController < ApplicationController
 			remote_ip = "164.39.71.226"
 		end
 
-		geoip_city = GeoIP.new('GeoLiteCity.dat').city(remote_ip)g
+		geoip_city = GeoIP.new('GeoLiteCity.dat').city(remote_ip)
 
 		@city_name = geoip_city ? geoip_city.city_name : 'Bristol'
 
-		@bread_name = BreadName.find_by(city_name: city_name) || 'Roll'
+		@bread_name = BreadName.find_by(city_name: @city_name) || 'Roll'
 	end
 end
