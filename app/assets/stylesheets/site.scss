@@ -1,6 +1,6 @@
 // Place all the styles related to the Site controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com/ FBF5F3
 
 body {
 	background-color: FBF5F3;
@@ -9,4 +9,11 @@ body {
 div {
     display: flex;
     align-items: center;
+    float: left;
+}
+
+.centerdiv {
+	 display: flex;
+ 	 flex-direction: column;
+  	justify-content: center;
 }
