@@ -2,7 +2,6 @@ require "geoip"
 
 class SiteController < ApplicationController	
 	def index
-
 		remote_ip = request.remote_ip
 		logger.debug remote_ip == "::1"
 		if remote_ip == "::1" 
@@ -14,24 +13,19 @@ class SiteController < ApplicationController
 
 		if c.nil? 
 			#render plain: "No bread for you, chump!"
-			not_found
-			return
+			# not_found
+			# return
+			c = 'Bristol' # Default to bristol if city not found
 		end
 
-		debug_city = "Bristol"
-
-		# bn = BreadName.find_by(city_name: c.city_name)
-		bn = BreadName.find_by(city_name: debug_city)
+		bn = BreadName.find_by(city_name: c.city_name)
 
 		if bn.nil?
 			not_found
 			return
 		end
 
-		# unhighlight this to brute force it
-		# @city_name = c.city_name
-		@city_name = debug_city
+		@city_name = c.city_name
 		@bread = bn.bread_name
 	end
-
 end
