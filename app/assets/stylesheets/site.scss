@@ -6,23 +6,26 @@ body {
 	background-color: FBF5F3;
 }
 
+tbody {
+	text-align: center;
+}
+
 .centerdiv {
+	 align-items: center;
 	 display: flex;
  	 flex-direction: column;
   	 justify-content: center;
 }
 
 .footer {
-	height: 20%;
-	width: 100%;
+	height: 20vh;
 	text-align: center;
 	background-color: #009DDC;
 	text-color: white;
 }
 
 .header {
-	height: 20%;
-	width: 100%;
+	height: 20vh;
 	text-align: center;
 	background-color: #009DDC;
 	text-color: white;

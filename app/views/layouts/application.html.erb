@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div>
         <!-- Header-->
         <div>
         </div>
@@ -21,14 +21,13 @@
         <div class="centerdiv header">
           <div class="topnav header" id="myTopnav">
           <a href="#home">Home</a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
           <a href="#about">About</a>
+          <a href="#news">News</a>
           </div>
         </div>
 
         <!-- Magic Box-->
-        <div>
+        <div class="centerdiv">
           <div>
             <%= yield %>
           </div>
@@ -42,13 +41,16 @@
               </div>
                 <div class="fb-text form-group field-text-1510242096151">
                   <label for="text-1510242096151" class="fb-text-label">Where are you?</label>
-                  <input type="text" placeholder="Which village, town, or City?" class="form-control" name="text-1510242096151" maxlength="25" id="text-1510242096151"></div>
+                  <input type="text" placeholder="Which village, town, or City?" class="form-control" name="text-1510242096151" maxlength="25" id="text-1510242096151" /></div>
 
                 <div class="fb-text form-group field-text-1510242636819">
-                  <label for="text-1510242636819" class="fb-text-label">What do you call it?</label><input type="text" placeholder="A bap, a barm, a bun maybe?" class="form-control" name="text-1510242636819" maxlength="25" id="text-1510242636819"
-                </div><br>
+                  <label for="text-1510242636819" class="fb-text-label">What do you call it?</label><input type="text" placeholder="A bap, a barm, a bun maybe?" class="form-control" name="text-1510242636819" maxlength="25" id="text-1510242636819"/>
+                </div>
 
-                <div class="fb-button form-group field-button-1510242405438"><button type="submit" class="btn btn-success" name="button-1510242405438" style="success" id="button-1510242405438">Submit</button>
+                <br>
+
+                <div class="fb-button form-group field-button-1510242405438">
+                  <button type="submit" class="btn btn-success" name="button-1510242405438" style="success" id="button-1510242405438">Submit</button>
                 </div>
              </div>
           </form>
@@ -60,10 +62,10 @@
         </div>
 
         <!-- Footer--> 
-          <div class="centerdiv footer">
-            <a href="https://twitter.com/bun_fight_app?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bun_fight_app</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <a href="http://www.codefirstgirls.org.uk">Code First Girls</a>
-          </div>
+        <div class="centerdiv footer">
+          <a href="https://twitter.com/bun_fight_app?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bun_fight_app</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="http://www.codefirstgirls.org.uk">Code First Girls</a>
+        </div>
 
     </div>
   </body>
