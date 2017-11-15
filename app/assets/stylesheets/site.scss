@@ -6,26 +6,25 @@ body {
 	background-color: FBF5F3;
 }
 
-div {
-    display: flex;
-    align-items: center;
-    float: left;
-}
-
 .centerdiv {
 	 display: flex;
  	 flex-direction: column;
-  	justify-content: center;
+  	 justify-content: center;
 }
 
 .footer {
+	height: 20%;
+	width: 100%;
 	text-align: center;
 	background-color: #009DDC;
 	text-color: white;
 }
 
 .header {
+	height: 20%;
+	width: 100%;
 	text-align: center;
 	background-color: #009DDC;
 	text-color: white;
 }
+
