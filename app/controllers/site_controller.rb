@@ -14,6 +14,6 @@ class SiteController < ApplicationController
 
 		@city_name = geoip_city ? geoip_city.city_name : 'Bristol'
 
-		@bread_name = BreadName.find_by(city_name: @city_name) || 'Roll'
+		@bread_name = BreadName.find_by(city_name: @city_name).bread_name || 'Roll'
 	end
 end
