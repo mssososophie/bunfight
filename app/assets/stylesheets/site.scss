@@ -28,7 +28,8 @@ tbody {
 .header {
 	height: 20vh;
 	text-align: center;
-	background-color: #009DDC;
+	background: url("https://d3awvtnmmsvyot.cloudfront.net/api/file/TJEbVocRyuWlqPb7XL5J/convert?fit=max&w=1450&quality=60&cache=true&rotate=exif&compress=true");
+	background-size: cover;
 	text-color: white;
 	font-family: Helvetica, sans-serif;
 }
@@ -46,4 +47,8 @@ ul {
 li {
 	display: inline;
 	padding 0px 10px 0px 10px;
+}
+
+h1 {
+	font-family: Helvetica, sans-serif
 }
