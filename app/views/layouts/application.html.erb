@@ -13,12 +13,8 @@
 
   <body>
     <div>
-        <!-- Header-->
-        <div>
-        </div>
-
         <!-- Nav bar-->
-        <div class="centerdiv header">
+        <div class="header">
           <div class="topnav header" id="myTopnav">
             <h1> Bun Fight!</h1>
             <ul>
@@ -30,38 +26,43 @@
           </div>
         </div>
 
+        <!-- Info bar-->
+        <div class="centerdiv">
+          <h3>Let's get ready to rubble</h3>
+        </div>
+
+
         <!-- Magic Box-->
         <div class="centerdiv">
           <div>
             <%= yield %>
           </div>
         </div>  
+
         <!-- Form-->
-        <div class="centerdiv"> 
-          <form id="rendered-form">
-            <div class="rendered-form">
-              <div>
-                <h1 id="control-1834347">Is your bread name not mentioned?<br>Fight your corner and contribute to the Bun Fight database</h1>
+        <div class="centerdiv">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-lg-4" for="email">In</label>
+              <div class="col-lg-4">
+                <input type="location" class="form-control" id="location" placeholder="City / Town / Village">
               </div>
-                <div class="fb-text form-group field-text-1510242096151">
-                  <label for="text-1510242096151" class="fb-text-label">Where are you?</label>
-                  <input type="text" placeholder="Which village, town, or City?" class="form-control" name="text-1510242096151" maxlength="25" id="text-1510242096151" /></div>
-
-                <div class="fb-text form-group field-text-1510242636819">
-                  <label for="text-1510242636819" class="fb-text-label">What do you call it?</label><input type="text" placeholder="A bap, a barm, a bun maybe?" class="form-control" name="text-1510242636819" maxlength="25" id="text-1510242636819"/>
-                </div>
-
-                <br>
-
-                <div class="fb-button form-group field-button-1510242405438">
-                  <button type="submit" class="btn btn-success" name="button-1510242405438" style="success" id="button-1510242405438">Submit</button>
-                </div>
-             </div>
+              <label class="control-label col-lg-4" for="pwd">we call it a</label>
+              <div class="col-lg-4"> 
+                <input type="bread_name" class="form-control" id="pwd" placeholder=""Enter password">
+              </div>
+            </div>
+            <div class="form-group"> 
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
           </form>
         </div>
 
         <!-- Twitter widget-->
         <div class="centerdiv">
+          <h3>See the Bun Fight commentary on Twitter</h3>
           <a class="twitter-timeline" style="width: 25% ;height: 25%" data-width="500" data-height="400" data-link-color="#981CEB" href="https://twitter.com/bun_fight_app">Tweets by Bun Fight</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 

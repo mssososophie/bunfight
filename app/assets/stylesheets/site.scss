@@ -10,6 +10,16 @@ tbody {
 	text-align: center;
 }
 
+// the magic box element sits within this table
+table {
+	background-color: yellow;
+}
+
+td {
+	text-color: blue;
+	font-family: Helvetica, sans-serif;
+}
+
 .centerdiv {
 	 align-items: center;
 	 display: flex;
@@ -27,9 +37,13 @@ tbody {
 
 .header {
 	height: 20vh;
+<<<<<<< HEAD
 	text-align: center;
-	background: url("https://d3awvtnmmsvyot.cloudfront.net/api/file/TJEbVocRyuWlqPb7XL5J/convert?fit=max&w=1450&quality=60&cache=true&rotate=exif&compress=true");
-	background-size: cover;
+=======
+	display: flex;
+  	justify-content: center flex-start;
+	background-color: #009DDC;
+>>>>>>> b139cc5e33cb12d3126ec59d4565584761ee13a2
 	text-color: white;
 	font-family: Helvetica, sans-serif;
 }
