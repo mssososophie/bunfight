@@ -19,7 +19,7 @@ table {
 }
 
 td {
-	text-color: #f4f2ef;
+	text-color: blue;
 	font-family: Helvetica, sans-serif;
 }
 
@@ -43,7 +43,7 @@ td {
 .footer {
 	height: 20vh;
 	text-align: center;
-	background-color: #009DDC;
+	background-color: #f4f2ef;
 	text-color: white;
 	font-family: Helvetica, sans-serif;
 }
@@ -53,8 +53,7 @@ td {
 	text-align: center;
 	display: flex;
   	justify-content: center flex-start;
-	background-color: #009DDC;
-// >>>>>>> b139cc5e33cb12d3126ec59d4565584761ee13a2
+	background-color: #f4f2ef;
 	text-color: white;
 	font-family: Helvetica, sans-serif;
 }
@@ -64,20 +63,26 @@ td {
 	color: #ff6347;
 }
 
-ul {
-	padding: 10px;
-	background: #009DDC;
-}
-
-h1 {
-	font-family: Helvetica, sans-serif;
-// >>>>>>> 6b1bd0d28bfb244b9effa4c993b33b8abeb5a979
+.textbox{
+	width: 50%;
+	align-items: center;
+	display: flex;
+ 	flex-direction: column;
+  	justify-content: center;
 }
 
 .style_image {
 	border-radius: 50%;
 	height: 220px; 
 	width: 220px;
-	display: flex;
- 	flex-direction: row;
+	padding: 10px;
 }
+
+ul {
+	padding: 10px;
+}
+
+h1 {
+	font-family: Helvetica, sans-serif;
+}
+
