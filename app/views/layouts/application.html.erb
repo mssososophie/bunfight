@@ -15,21 +15,19 @@
 
     <div>
         <!-- Nav bar-->
-        <div class="header">
-          <div class="topnav header" id="myTopnav">
+        <div class="header centerdiv">
+            <img src="bread-logo.png">
             <h1>Bun Fight!</h1>
             <ul>
-<!--The link used for the Home page is probably wrong, I wasn't sure which file was correct so guessed -->
-              <li><a href="/index.html.erb">Home</a></li>
+              <li><a href="/index.html.erb">Fight</a></li>
+              <li><a href="#elsewhere">Join the fight</a></li>
               <li><a href="/about.html">About</a></li>
-              <li><a href="#elsewhere">Elsewhere</a></li>
             </ul>
-          </div>
         </div>
 
         <!-- Info bar-->
         <div class="centerdiv paddingdiv">
-          <h3>Let's get ready to rubble</h3>
+          <h3>Let's get ready to rumble</h3>
         </div>
 
         <!-- Magic Box-->
@@ -41,6 +39,7 @@
 
         <!-- Form-->
         <div class="centerdiv paddingdiv">
+          <h3 class="smallpadding">Join the fight</h3>
           <form class="form-inline">
             <div class="form-group">
               <label for="location">Where I'm from in </label>
@@ -69,16 +68,21 @@
         </div>
 
  
-        <!-- Contact -->
+        <!-- About -->
         <div class="centerdiv paddingdiv">
-          <%= image_tag("sophieashcroft.jpg", :alt => "Image of Sophie wearing a cardboard robot head", :class => "style_image") %>
-          <h3>Sophie Ashcroft</h3>
-          <p>Bun Fight founder</p>
-          <p><em>I'm from Cheshire so for me it's a Bap</em></p>
-          <%= image_tag("ciar.jpg", :alt => "Image of Ciar with long red hair", :class => "style_image") %>
-          <h3>Ciar Egan</h3>
-          <p>Bun Fight co-creator</p>
-          <p><em>I'm from London so for me it's a roll</em></p>
+          <h3>About</h3>
+          <div class="smallpadding">
+            <%= image_tag("sophie.jpg", :alt => "Image of Sophie wearing a cardboard robot head", :class => "style_image") %>
+            <h3>Sophie Ashcroft</h3>
+            <p>Bun Fight founder</p>
+            <p><em>I'm from Cheshire so for me it's a Bap</em></p>
+          </div>
+          <div class="smallpadding">
+            <%= image_tag("ciar.jpg", :alt => "Image of Ciar with long red hair", :class => "style_image") %>
+            <h3>Ciar Egan</h3>
+            <p>Bun Fight co-creator</p>
+            <p><em>I'm from London so for me it's a roll</em></p>
+          </div>
         </div>
 
         <!-- Footer--> 
