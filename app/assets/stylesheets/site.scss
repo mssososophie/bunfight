@@ -37,9 +37,13 @@ td {
 
 .header {
 	height: 20vh;
+<<<<<<< HEAD
+	text-align: center;
+=======
 	display: flex;
   	justify-content: center flex-start;
 	background-color: #009DDC;
+>>>>>>> b139cc5e33cb12d3126ec59d4565584761ee13a2
 	text-color: white;
 	font-family: Helvetica, sans-serif;
 }
@@ -56,5 +60,13 @@ ul {
 
 li {
 	display: inline;
+<<<<<<< HEAD
 	padding: 0px 10px 0px 10px;
+=======
+	padding 0px 10px 0px 10px;
+}
+
+h1 {
+	font-family: Helvetica, sans-serif
+>>>>>>> 6b1bd0d28bfb244b9effa4c993b33b8abeb5a979
 }
