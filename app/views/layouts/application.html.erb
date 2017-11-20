@@ -18,29 +18,27 @@
         <div class="header centerdiv">
             <img src="bread-logo.png">
             <h1>Bun Fight!</h1>
-            <ul>
-              <li><a href="/index.html.erb">Fight</a></li>
-              <li><a href="#elsewhere">Join the fight</a></li>
-              <li><a href="/about.html">About</a></li>
-            </ul>
-        </div>
-
-        <!-- Info bar-->
-        <div class="centerdiv ">
-          <h3>Let's get ready to rumble</h3>
+              <a href="/index.html.erb">Fight</a>
+              <a href="#elsewhere">Join the fight</a>
+              <a href="/about.html">About</a>
         </div>
 
         <!-- Magic Box-->
-        <div class="centerdiv paddingdiv">
-          <div>
-            <%= yield %>
-          </div>
-        </div>  
+        <div class="box1">
+          <div class="centerdiv paddingdiv">
+            <div class="centerdiv ">
+              <h3>Let's get ready to rumble</h3>
+            </div>
+            <div>
+              <%= yield %>
+            </div>
+          </div>  
+        </div>
 
         <!-- About Bunfight -->
-        <div class="textbox">
-          <h3>Time out! Why is everyone fighting?</h3>
-          <p><strong>Bun Fight</strong> is a project that hopes to end all pedantic-pub debates that argue the correct name for  'What is that small peice of bread - the one that just fits in your hand <em>really</em> called?' 
+        <div class="centerdiv">
+          <h3 class="paddingdiv">Time out! Why is everyone fighting?</h3>
+          <p class="smallpadding"><strong>Bun Fight</strong> is a project that hopes to end all pedantic-pub debates that argue the correct name for  'What is that small peice of bread - the one that just fits in your hand <em>really</em> called?' 
           <br>
           People all over the UK call it all sorts of different things, there's no wrong answer so we've started a database that'll tell you the most common name in your area.
           <br>
@@ -52,8 +50,9 @@
 
 
         <!-- Form-->
+        <div class="box2">
         <div class="centerdiv paddingdiv">
-          <h3 class="smallpadding">Join the fight</h3>
+          <h2 class="smallpadding">Join the fight</h2>
           <form class="form-inline">
             <div class="form-group">
               <label for="location">Where I'm from in </label>
@@ -66,31 +65,36 @@
             <button type="submit" class="btn btn-success">Join the fight!</button>
           </form>
         </div>
+        </div>
 
 
         <!-- Twitter widget-->
         <div class="centerdiv">
-          <h3>See the Bun Fight commentary on Twitter</h3>
+          <h2 class="paddingdiv">See the Bun Fight commentary on Twitter</h2>
           <a class="twitter-timeline" style="width: 25% ;height: 25%" data-width="500" data-height="400" data-link-color="#981CEB" href="https://twitter.com/bun_fight_app">Tweets by Bun Fight</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
  
         <!-- About -->
-        <div class="centerdiv paddingdiv">
-          <h3>About</h3>
-          <div class="smallpadding">
-            <%= image_tag("sophie.jpg", :alt => "Image of Sophie wearing a cardboard robot head", :class => "style_image") %>
-            <br>
-            <h3>Sophie Ashcroft</h3>
-            <p>Bun Fight founder</p>
-            <p><em>I'm from Cheshire so for me it's a Bap</em></p>
-          </div>
-          <div class="smallpadding">
-            <%= image_tag("ciar.jpg", :alt => "Image of Ciar with long red hair", :class => "style_image") %>
-            <br>
-            <h3>Ciar Egan</h3>
-            <p>Bun Fight co-creator</p>
-            <p><em>I'm from London so for me it's a roll</em></p>
+        <div class="box1">
+          <div class="centerdiv paddingdiv">
+            <h2>About</h2>
+            <div>
+              <div class="smallpadding">
+                <%= image_tag("sophie.jpg", :alt => "Image of Sophie wearing a cardboard robot head", :class => "style_image") %>
+                <br>
+                <h3>Sophie Ashcroft</h3>
+                <p>Bun Fight founder</p>
+                <p><em>I'm from Cheshire so for me it's a Bap</em></p>
+              </div>
+              <div class="smallpadding">
+                <%= image_tag("ciar.jpg", :alt => "Image of Ciar with long red hair", :class => "style_image") %>
+                <br>
+                <h3>Ciar Egan</h3>
+                <p>Bun Fight co-creator</p>
+                <p><em>I'm from London so for me it's a roll</em></p>
+              </div>
+            </div>
           </div>
         </div>
 

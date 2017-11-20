@@ -6,20 +6,17 @@ body {
 	background-color: FBF5F3;
 }
 
-tbody {
-	text-align: center;
-}
-
 // the magic box element sits within this table
 table {
 	background-color: white;
-	border: 1px solid #f4f2ef;
+	border: px solid #f4f2ef;
 	margin: 10px;
 	padding: 10px;
+	font-size: 30px;
 }
 
 td {
-	text-color: blue;
+	text-color: gray;
 	font-family: Helvetica, sans-serif;
 }
 
@@ -43,9 +40,10 @@ td {
 .footer {
 	height: 20vh;
 	text-align: center;
-	background-color: #f4f2ef;
+	background-color: #FAEBD7;
 	text-color: white;
 	font-family: Helvetica, sans-serif;
+	font-size: 25px;
 }
 
 .header {
@@ -53,13 +51,13 @@ td {
 	text-align: center;
 	display: flex;
   	justify-content: center flex-start;
-	background-color: #f4f2ef;
+	background-color: #FAEBD7;
 	text-color: white;
 	font-family: Helvetica, sans-serif;
 }
 
 .rendered-form{
-	font-family: Arial, sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: #ff6347;
 }
 
@@ -69,6 +67,7 @@ td {
 	display: flex;
  	flex-direction: column;
   	justify-content: center;
+  	text-align: center;
 }
 
 .style_image {
@@ -78,6 +77,18 @@ td {
 	padding: 10px;
 }
 
+.box1 {
+	width: 100%;
+	height: 25%;
+	background-color: #fad7d7;
+}
+
+.box2 {
+	width: 100%;
+	height: 25%;
+	background-color: #FAEBD7; 
+}
+
 ul {
 	padding: 10px;
 }
@@ -85,4 +96,13 @@ ul {
 h1 {
 	font-family: Helvetica, sans-serif;
 }
+
+h3 {
+	font-family: Helvetica, sans-serif;
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+}
+
 
