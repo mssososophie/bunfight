@@ -1,24 +1,9 @@
-# README
+# Bun Fight
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+What do you call that wee round peice of bread? Built to end arguements between British folks about the correct naming of bread.
 
-Things you may want to cover:
+Web app geolocates where you are and tells you what people call bread in that area.
 
-* Ruby version
+## Updating...
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I'm in the process of updating this app as some dependancies have vunerabilities that need dealing with.
